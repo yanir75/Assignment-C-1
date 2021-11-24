@@ -1,7 +1,9 @@
 #include <stdio.h>
 int min(int mat[10][10] ,int i,int j,int k){
-    if(mat[i][j]==0 && (mat[i][k] + mat[k][j]) > 0)
+    if(mat[i][j]==0)
     return mat[i][k] + mat[k][j];
+    if((mat[i][k] + mat[k][j])==0)
+    return mat[i][j]
     if(mat[i][k] + mat[k][j] < mat[i][j])
     return mat[i][k] + mat[k][j];
     return mat[i][j];
