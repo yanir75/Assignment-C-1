@@ -30,9 +30,9 @@ int B(int mat[10][10])
 {   int i,j;
     scanf("%d%d",&i,&j);
     if(mat[i][j]>0)
-    printf("True");
+    printf("True\n");
     else
-    printf("False");
+    printf("False\n");
     return 0;
 }
 int C(int mat[10][10])
@@ -40,8 +40,8 @@ int C(int mat[10][10])
     int i,j;
     scanf("%d%d",&i,&j);
     if(mat[i][j]>0)
-    printf("%d",mat[i][j]);
+    printf("%d\n",mat[i][j]);
     else
-    printf("-1");
+    printf("-1\n");
     return 0;
 }
