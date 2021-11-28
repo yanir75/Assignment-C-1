@@ -1,8 +1,8 @@
 #include <stdio.h>
 int min(int mat[10][10] ,int i,int j,int k){
-    if(mat[i][j]==0)
-    return mat[i][k] + mat[k][j];
-    if((mat[i][k] + mat[k][j])==0)
+    if(mat[i][j]==0 && mat[i][k]!=0 && mat[k][j]!=0))
+    return (mat[i][k]+mat[k][j]);
+    if((mat[i][k]==0|| mat[k][j])==0)
     return mat[i][j];
     if(mat[i][k] + mat[k][j] < mat[i][j])
     return mat[i][k] + mat[k][j];
@@ -13,7 +13,6 @@ for (int k = 0; k < 10; k++) {
     for (int i = 0; i < 10; i++) {
       for (int j = 0; j < 10; j++) {
         mat[i][j] = min(mat,i,j,k);
-        mat[j][i] = mat[i][j];
       }
     }
   }
