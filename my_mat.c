@@ -2,14 +2,19 @@
 int min(int mat[10][10] ,int i,int j,int k){
     if(i==j)
     return 0;
+    
     if(mat[i][j]==0 && (mat[i][k]==0 || mat[k][j]==0))
     return 0;
-    if((mat[i][k]==0|| mat[k][j])==0)
+    
+    if(mat[i][k]==0|| mat[k][j]==0)
     return mat[i][j];
-    if(0== mat[i][j])
+    
+    if(mat[i][j] == 0)
     return mat[i][k] + mat[k][j];
+    
     if(mat[i][k] + mat[k][j] < mat[i][j])
     return mat[i][k] + mat[k][j];
+    
     return mat[i][j];
 }
 int fix(int mat[10][10]){
@@ -25,7 +30,7 @@ for (int k = 0; k < 10; k++) {
 int A(int mat[10][10]){
     for (int i = 0;i<10;i++){
          for (int j = 0;j<10;j++){
-            int d;
+            int d = 0;
             scanf("%d",&d);
             mat[i][j]=d;
     } 
