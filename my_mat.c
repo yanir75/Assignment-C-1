@@ -27,7 +27,7 @@ for (int k = 0; k < 10; k++) {
   }
     return 0;
 }
-int A(int mat[10][10]){
+int create_mat(int mat[10][10]){
     for (int i = 0;i<10;i++){
          for (int j = 0;j<10;j++){
             int d = 0;
@@ -38,7 +38,7 @@ int A(int mat[10][10]){
     fix(mat);
     return 0;
 }
-int B(int mat[10][10])
+int path_exist(int mat[10][10])
 {   int i,j;
     scanf("%d%d",&i,&j);
     if(mat[i][j]>0)
@@ -47,7 +47,7 @@ int B(int mat[10][10])
     printf("False\n");
     return 0;
 }
-int C(int mat[10][10])
+int shortest_path(int mat[10][10])
 {
     int i,j;
     scanf("%d%d",&i,&j);
