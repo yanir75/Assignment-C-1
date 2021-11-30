@@ -1,4 +1,4 @@
-int A(int mat[10][10]);
-int B(int mat[10][10]);
-int C(int mat[10][10]);
+int create_mat(int mat[10][10]);
+int path_exist(int mat[10][10]);
+int shortest_path(int mat[10][10]);
 
