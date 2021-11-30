@@ -8,11 +8,11 @@ int main()
     {
     scanf("%c",&ch);
     if(ch=='A')
-    A(mat);
+    create_mat(mat);
     if(ch=='B')
-    B(mat);
+    path_exist(mat);
     if(ch=='C')
-    C(mat);
+    shortest_path(mat);
     }
     return 0;
 }
