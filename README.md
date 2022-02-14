@@ -20,7 +20,7 @@ gcc and make is required.
 
 First lets clone the repo
 ```
-git clone
+git clone https://github.com/yanir75/Assignment-C-1.git
 ```
 
 Use the makefile 
@@ -29,4 +29,6 @@ make all
 ```
 
 Run the commands
+```
+./connections
 ```
