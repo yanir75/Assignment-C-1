@@ -20,7 +20,7 @@ gcc and make is required.
 
 First lets clone the repo
 ```
-git clone https://github.com/yanir75/Assignment-C-1.git
+git clone https://github.com/yanir75/C-Graph-basics.git
 ```
 
 Use the makefile 
